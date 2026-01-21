@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Math Page</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='math.css') }}">
+    </head>
+    <body>
+        <div class="modal-header">
+                    <h2>Math Quiz</h2>
+                    <br>
+                </div>
+        <div class="options">
+            <button class="start">Start</button>
+            <button class="add">Add</button>
+        </div>
+        <script src="{{ url_for('static', filename='math.js') }}"></script>
+        
+        <modal>
+            <div class="modal">
+                
+                <div class="modal-body"></div>
+                    <div class="modal-content">
+
+                        <hr>
+                        <p>This is a modal for math operations.</p>
+                        <p> Here are the questions:</p>
+                    <p>Difficulty level:
+                    <select>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                    </p>
+                    <hr>
+                    <p class="question">here is where the questions go.</p>
+                    <p>Answer:
+                    <input type="text" class="answer-input"></p>
+                    
+                    <div class="modal-footer">
+                    <button class="submit-answer">Submit Answer</button>
+                    <button class="close-modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </modal>
+
+    </body>
+</html>

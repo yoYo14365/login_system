@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Login</title>
+    </head>
+    <body>
+        <h1>Hi, welcome to the first step of your journey</h1>
+
+        <p>Please enter your credentials to log in</p>
+        <br>
+        <form id="loginform" action="/login" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="submit" value="Login">
+    </body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="{{url_for('static', filename='login.js')}}" > </script>
+</html>

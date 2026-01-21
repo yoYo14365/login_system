@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <div class = "tool-bar">
+        <p class = "context"> <a href="\about">About</a> </p> |     <p class = "context">  <a href="/contact">Contact</a> </p> |     <p class = "context">  <a href="/help">Help</a> </p> |     <p class = "context">  <a href="/login">Login</a> </p>
+    </div> 
+    
+    <div class="main">
+        <h1 class="title">Welcome to the Home Page! This is a smart quiz official page.</h1>
+        <p>Explore our features and take your learning to the next level.</p>
+        <p>Get started by logging in or signing up!</p>
+        <p>Check out our <a href="/about">About</a> page to learn more about us.</p>
+        <p>Need help? Visit our <a href="/help">Help</a> page.</p>
+        <p>Contact us through the <a href="/contact">Contact</a> page for any inquiries.</p>
+        <p>Happy Learning!</p>
+        <a href="/login">Login</a>
+    </div>
+</body>
+</html>

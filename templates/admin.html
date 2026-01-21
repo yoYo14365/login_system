@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Admin Dashboard</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}">
+    </head>
+    <body>
+        <h1>Welcome to the Smart Study</h1>
+
+        <div class = "tool-bar">
+            <p class = "context"> <a href="\about">About</a> </p> |     <p class = "context">  <a href="/contact">Contact</a> </p> |     <p class = "context">  <a href="/help">Help</a> </p>
+        </div> 
+
+        <div class = "options">
+            <div>
+                <button class = "math">Math</button>
+                <button class = "science">Science</button>
+                <button class = "games">Games</button>
+            </div>
+        </div>
+        <script src="{{ url_for('static', filename='admin.js') }}"></script>
+    </body>
+</html>
