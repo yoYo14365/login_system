@@ -12,13 +12,13 @@
             <button class="start">Start</button>
             <button class="add">Add</button>
         </div>
-        <script src="{{ url_for('static', filename='math.js') }}"></script>
+        
         
         <modal>
-            <div class="modal">
+            <div class="modal_start">
                 
-                <div class="modal-body"></div>
-                    <div class="modal-content">
+                <div class="modal-body_start"></div>
+                    <div class="modal-content_start">
 
                         <hr>
                         <p>This is a modal for math operations.</p>
@@ -35,13 +35,34 @@
                     <p>Answer:
                     <input type="text" class="answer-input"></p>
                     
-                    <div class="modal-footer">
+                    <div class="modal-footer_start">
                     <button class="submit-answer">Submit Answer</button>
                     <button class="close-modal">Close</button>
                     </div>
                 </div>
             </div>
         </modal>
-
+        <modal>
+            <div class="modal_add">
+                <div class="modal-body_add">
+                    <h4>This is where you add the questions, Please select the difficulty and enter the code in the space below</h4>
+                    <p>Question  </p><input type="text" class="question-input">
+                    <select class="difficulty-select">
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                    <br>
+                    <p>Answer  </p><input type="text" class="answer-input">
+                    <div class="modal-footer_add">
+                        <button class="submit-question">Submit Question</button>
+                        <button class="close-modal">Close</button>
+                    </div>
+                </div>
+                
+            </div>
+        </modal>
+        <script src="{{ url_for('static', filename='math.js') }}"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     </body>
 </html>

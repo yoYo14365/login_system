@@ -37,7 +37,7 @@ body{
 .add:hover{
     background-color: rgb(249, 229, 229);
 }
-.modal{
+.modal_start{
     border-radius: 10px;
     border-color: black;
     position: fixed;
@@ -51,21 +51,57 @@ body{
     align-items: center;
     visibility: hidden;
 }
-.modal-header{
+.modal-header_start{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid #ccc;
 }
-.modal-content{
+.modal-content_start{
     background-color: white;
     border-radius: 10px;
     text-align: center;
     height: 75%;
     width: 75%;
 }
-.modal-footer{
+.modal-footer_start{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}
+.modal_add{
+    border-radius: 10px;
+    border-color: black;
+    position: fixed;
+    top: 150;
+    left: 350;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.modal-header_add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.modal-body_add{
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    height: 75%;
+    width: 75%;
+}
+.modal-footer_add{
     display: flex;
     justify-content: right;
     align-items: center;
